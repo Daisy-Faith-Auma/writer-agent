@@ -1,0 +1,19 @@
+# Copy this file for each new article: briefs/<article-slug>.yaml
+
+# Required
+topic: ""
+format: ""            # tutorial, blog post, or doc
+key_takeaway: ""      # the one thing the reader should leave with
+
+# Optional
+audience: ""          # default: beginner to mid-level developers
+length: ""            # default: about 1,200 words for blog posts, longer for tutorials
+experience: ""        # the real story behind this piece. The agent never invents this.
+source_material: []   # file paths or links: notes, repos, docs
+must_include: []
+avoid: []
+
+# Tutorials only
+what_reader_builds: ""
+prerequisites: []
+repo_url: ""

@@ -30,13 +30,13 @@ All files for an article go in `output/<article-slug>/`.
 4. Revise until she approves. Do not start drafting before approval.
 
 ## Stage 4: Draft
-1. Write `draft.md` following every rule in CLAUDE.md.
+1. 1. Write `draft.md` following every rule in CLAUDE.md. The first line must be the title as `# Title`, followed by the article body.
 2. For tutorials and any piece with code: save each code block to the `code/` folder and run it in the `writer-agent` conda environment. Use the real output for every "You should see..." line.
 3. If a code block can't be run (it needs credentials, a paid service, or special hardware), add the comment `<!-- VERIFY: reason -->` above it.
 
 ## Stage 5: Review (Checkpoint 2)
 1. Reread the draft against CLAUDE.md: voice, format structure, code rules, and platform-safe formatting. Fix every issue you find.
-2. Search the draft for em dashes and remove any you find.
+2. Run `python scripts/check_draft.py output/<slug>/draft.md`. Fix every issue it reports and rerun until it prints `All checks passed`.
 3. Tell Daisy the draft is ready and give her: the word count, the opening hook, and a list of every VERIFY item.
 4. Ask her to review `draft.md`. Revise until she approves. Do not export before approval.
 
@@ -50,7 +50,7 @@ All files for an article go in `output/<article-slug>/`.
     tags: <tag1>, <tag2>, <tag3>, <tag4>
     ---
 
-2. Create `preview.html`: convert the article body to HTML using the Python `markdown` package with the `fenced_code` extension, in the `writer-agent` environment. Wrap it in a simple HTML page with the title as an H1 and readable styling.
+2. Create `preview.html` by running `python scripts/make_preview.py output/<slug>`.
 3. Create `publish-kit.md` with every item listed in the Outputs section of CLAUDE.md.
 4. Tell Daisy the three files are ready, and remind her:
     - dev.to: paste the contents of `devto.md` into the dev.to editor.

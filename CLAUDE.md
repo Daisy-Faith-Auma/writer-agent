@@ -19,7 +19,7 @@ Write like a practitioner sharing what actually worked, not a textbook.
 - First person, confident, lightly humorous. Authority comes from hands-on work as a technical writer, DevRel engineer, and data science teacher.
 - Bold lead-ins for short lists of problems or reader questions.
 - Use contractions ("let's", not "let us").
-- End with something the reader can act on. No apologetic closers.
+-  End with something the reader can act on. Blog posts can then close with one short question to readers. No apologetic closers.
 - Never use em dashes. Use commas, colons, parentheses, or separate sentences.
 - No filler openers ("In today's fast-paced world"). No hype words ("revolutionary", "game-changer").
 
@@ -29,6 +29,7 @@ Patterns that fit: "How I Built X", "X That Developers Actually Read", "Why I Ch
 ## Formats
 Tutorial:
 - First paragraph promises the outcome ("By the end, you'll have...").
+- Use "we" to walk through steps with the reader, with contractions ("we'll", "let's").
 - Link to the complete code repo near the top.
 - Plain-language analogy before the first code block.
 - Prerequisites with versions.

@@ -2,3 +2,7 @@
 .vscode/
 __pycache__/
 voice-samples/
+.claude/settings.local.json
+output/
+briefs/*
+!briefs/_template.yaml

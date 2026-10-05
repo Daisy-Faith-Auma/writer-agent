@@ -6,3 +6,5 @@ voice-samples/
 output/
 briefs/*
 !briefs/_template.yaml
+news/
+.env
